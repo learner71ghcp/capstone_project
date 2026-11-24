@@ -56,6 +56,18 @@ cd backend
 pytest
 ```
 
+## GitHub MCP in VS Code
+
+The workspace includes a GitHub MCP server configuration in `.vscode/mcp.json`.
+Open this repository in VS Code, start GitHub Copilot Chat in Agent mode, and
+approve the GitHub sign-in prompt to use repository and pull-request tools.
+
+After pushing a feature branch, ask Copilot to open a pull request. To review a
+pull request, ask Copilot to inspect its changes and provide findings. MCP makes
+these tools available to Copilot; it does not independently create or review
+pull requests in the background. For event-triggered automation, configure a
+GitHub Actions workflow or GitHub's Copilot code review settings.
+
 ## Current functionality
 - List products
 - View a product by ID
